@@ -3,9 +3,12 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+
   "_comment1": "---> Nosso script para fazer testes da nossa aplicação usando a biblioteca ts-node-dev <---",
   "scripts": {
-    "dev": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules src/server.ts"
+    "dev": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules src/server.ts",
+    "lint": "eslint . --ext .ts",
+    "lint-fix": "eslint . --ext .ts --fix"
   },
   "devDependencies": {
     "@types/node": "^17.0.24",
